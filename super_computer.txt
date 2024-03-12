@@ -1,0 +1,20 @@
+#menu table td
+{
+	background-color:white;
+	border:1px solid white;
+	width: 170px;
+	height:40px;
+	text-align:center;
+	line-height:40px;
+	float:center;
+}
+#menu table td a
+{
+	text-decoration:none;
+	color:white;
+	display:block;
+}
+#menu table td a:hover
+{
+	background-color:green;
+}
