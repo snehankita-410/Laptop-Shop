@@ -1,0 +1,48 @@
+<!Doctype html>
+<html>
+
+<head>
+<title>W3.css</title>
+<meta name="viewport" content="width-device-width, initial-scale-1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="content type">
+<link rel="stylesheet" https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<style>
+.myslides {display:none;}
+</style>
+</head>
+
+<body>
+
+<h2 class="w3-center">Automatic slideshow</h2>
+
+<div class="w3-content w3-section" style="max-width:500px">
+    <img class="myslides" src="banner.png" style="width:100%">
+	<img class="myslides" src="banner4.png" style="width:100%">
+	<img class="myslides" src="banner5.png" style="width:100%">
+	<img class="myslides" src="banner3.png" style="width:100%">
+</div>
+
+<script>
+var my index = 0;
+carousel() {
+
+function carousel() {
+      var i;
+	  var x = document.getElementByClassName("myslides")
+	  for (i = 0; i < x.length; i++) {
+	     x[i].style.display = "none";
+	  }
+	  myIndex++;
+	  if (myIndex > x.length) {myIndex = 1}
+	  x[myIndex-1].style.display = "block";
+	  settimeout(carousel, 4000); //change image every 4 seconds
+}
+</script>
+
+</body>
+</html>
+<table border="0" width="100%" bgcolor="white" >
+
+<th><img src="banner3.jpeg" width="100%" height="46%"></th>
+<th><img src="banner1.jpeg" width="100%" height="90%" ></th>
+</table>
